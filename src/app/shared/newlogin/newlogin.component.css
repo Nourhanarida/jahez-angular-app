@@ -1,0 +1,48 @@
+.modal-content {
+  padding: 10px !important;
+}
+
+.myformmodal .show-pass i{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--grey-color);
+}
+.myformmodal .btn_main{
+  width: 100%;
+  margin:20px auto;
+}
+
+ .bg-logo{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  padding: 10px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.sub_title{
+  margin:0 auto 10px;
+
+}
+.sub_title::after{
+  right: 50%;
+  transform: translateX(50%);
+  width: 60% !important;
+}
+.newloginmodal {
+  --bs-modal-padding:unset !important;
+  /* padding: 1rem 6rem; */
+}
+.newloginmodal label{
+  font-size: 11px;
+}
+
+
+.btn_main{
+  margin: 10px auto;
+  width: 50%;
+}

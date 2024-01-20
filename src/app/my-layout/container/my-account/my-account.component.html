@@ -1,0 +1,220 @@
+<div>
+    <app-header></app-header>
+</div>
+<div class="body-content">
+  
+   
+    <div class="row"> 
+   
+      <div class="col-lg-2 col-md-3 col-12"> 
+         <div class="acc-settings box-shadow"> 
+          
+            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+              <i class="fa fa-bell"></i>
+
+                <ngb-panel title="اعدادات حسابي">
+                  <ng-template ngbPanelContent>
+                   
+                   <ul class="">
+                      <li>
+                        <a [routerLink]="['profile']" class="active" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                          <div class="acc-option active">
+                            <div class="d-flex align-items-center gap_8">
+                                <div class="acc-icon">
+                                   <i class="fa fa-user"></i>
+                                </div>
+                                <span>  الملف الشخصي</span>
+                            </div>
+                          
+                            <span class="fa fa-angle-left"></span>
+                          </div>
+
+                        </a>
+                      </li>
+                      <li>
+                        <a [routerLink]="['complain']" >
+                          <div class="acc-option">
+                            <div class="d-flex align-items-center gap_8">
+                                <div class="acc-icon">
+                                   <i class="fa fa-user"></i>
+                                </div>
+                                <span>   الشكاوي المقدمة </span>
+                            </div>
+                          
+                            <span class="fa fa-angle-left"></span>
+                          </div>
+
+                        </a>
+                      </li>
+                      <li>
+                        <a [routerLink]="['favourite']" >
+                          <div class="acc-option">
+                            <div class="d-flex align-items-center gap_8">
+                                <div class="acc-icon">
+                                   <i class="fa fa-user"></i>
+                                </div>
+                                <span> المفضلة  </span>
+                            </div>
+                          
+                            <span class="fa fa-angle-left"></span>
+                          </div>
+
+                        </a>
+                      </li>
+                    
+                    </ul> 
+                  </ng-template>
+              </ngb-panel>
+            <ngb-panel title=" اعدادات عامة">
+            <ng-template ngbPanelContent>
+              <ul >
+                <li>
+                  <a [routerLink]="['profile']">
+                    <div class="acc-option">
+                      <div class="d-flex align-items-center gap_8">
+                          <div class="acc-icon">
+                             <i class="fa fa-user"></i>
+                          </div>
+                          <span>اعدادات الأشعارات</span>
+                      </div>
+                    
+                      <span class="fa fa-angle-left"></span>
+                    </div>
+
+                  </a>
+                </li>
+                <li>
+                  <a  [routerLink]="['language']">
+                    <div class="acc-option">
+                      <div class="d-flex align-items-center gap_8">
+                          <div class="acc-icon">
+                             <i class="fa fa-user"></i>
+                          </div>
+                          <span> اعدادات اللغة </span>
+                      </div>
+                    
+                      <span class="fa fa-angle-left"></span>
+                    </div>
+
+                  </a>
+                </li>
+             
+              </ul> 
+            </ng-template>
+            </ngb-panel>
+            <ngb-panel title="معلومات عامة">
+              <ng-template ngbPanelContent>
+                 
+                    <ul class="">
+                      <li>
+                        <a [routerLink]="['aboutus']"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                          <div class="acc-option ">
+                            <div class="d-flex align-items-center gap_8">
+                                <div class="acc-icon">
+                                   <i class="fa fa-bell"></i>
+                                </div>
+                                <span>   من نحن</span>
+                            </div>
+                          
+                            <span class="fa fa-angle-left"></span>
+                          </div>
+
+                        </a>
+                      </li>
+                      <li>
+                        <a [routerLink]="['privacy']" >
+                          <div class="acc-option">
+                            <div class="d-flex align-items-center gap_8">
+                                <div class="acc-icon">
+                                   <i class="fa fa-shield"></i>
+                                </div>
+                                <span>سياسة الخصوصية </span>
+                            </div>
+                          
+                            <span class="fa fa-angle-left"></span>
+                          </div>
+
+                        </a>
+                      </li>
+                      <li>
+                        <a [routerLink]="['aboutus']" >
+                          <div class="acc-option">
+                            <div class="d-flex align-items-center gap_8">
+                                <div class="acc-icon">
+                                   <i class="fa fa-shield"></i>
+                                </div>
+                                <span> الشروط والأحكام  </span>
+                            </div>
+                          
+                            <span class="fa fa-angle-left"></span>
+                          </div>
+
+                        </a>
+                      </li>
+                    
+                    </ul> 
+                      <!-- <div class="d-flex align-items-center gap_8">
+                          <div class="acc-icon">
+                              <i class="fa fa-bell"></i>
+                          </div>
+                          <span>   من نحن</span>
+                      </div>
+                    
+                      <span class="fa fa-angle-left"></span>
+                    </div>
+                    <div class="acc-option">
+                      <div class="d-flex align-items-center gap_8">
+                          <div class="acc-icon">
+                              <i class="fa fa-shield"></i>
+                          </div>
+                          <span>   سياية الخصوصية</span>
+                      </div>
+                    
+                      <span class="fa fa-angle-left"></span>
+                    </div>
+                    <div class="acc-option">
+                      <div class="d-flex align-items-center gap_8">
+                          <div class="acc-icon">
+                              <i class="fa fa-shield"></i>
+                          </div>
+                          <span>   الشروط والأحكام</span>
+                      </div>
+                    
+                      <span class="fa fa-angle-left"></span>
+                    </div> -->
+                  
+              </ng-template>
+              </ngb-panel> 
+            </ngb-accordion>
+
+            </div>
+           
+          </div>  
+
+      <div class="col-lg-10 col-md-9 col-12 p-3">
+        <div class="box-shadow"></div>
+          <div class="">
+            <router-outlet></router-outlet>
+          </div>
+      </div>  
+
+   <!-- </div>  -->
+   
+     <!-- <div class="col-lg-9 col-md-8 col-12">
+        <div class="row justify-content-cener my-4" >
+          <div class="container">
+            <div class="col-lg-1 col-md-2">
+
+            </div>
+            <div class="col-lg-8 col-md-10">
+            </div>
+            
+          </div>
+            
+        </div>
+       
+    </div> 
+
+
+</div> -->
+<app-footer></app-footer> 

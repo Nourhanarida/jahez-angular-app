@@ -1,0 +1,18 @@
+.order-box{
+    border: 1px solid var(--grey-color);
+    background-color: var(--white-color);
+    margin-bottom: 10px;
+    border-radius: 8px ;
+   
+}
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--main-color);
+}
+.btn_main_w{
+  margin: 20px auto;
+}

@@ -1,0 +1,216 @@
+<app-header></app-header>
+<div class="body-content">
+    <div class="sec-padd">
+        <div class="container">
+            <div class="sub_title">
+                <div>المنتجات المضافة</div>
+            </div>
+        <div class="row mt-4 mb-2">
+            <div class="col-lg-3 col-md-6 col-12 mb-2">
+                 <div class="box_product ">
+            <div class="product_img_box w-100 ">
+               <img src="../../../../assets/imgs/product.png">
+               <button  >
+                <app-heart></app-heart>
+             </button>
+
+            </div>
+            <aside>
+              <div class="d-flex justify-content-between align-items-center p-2">
+                  <div class="font-bold">سرير تركي</div>
+                  <span class=" main-color"> 8000 <span> ر.س </span></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+                <div class="">
+                  <div class="mb-1 grey-color">فنادق</div>
+
+                  <app-rating></app-rating>
+                </div>
+                <div  class="semi_btn_w">50% off </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center my-2">
+                <app-plus-minus-btn></app-plus-minus-btn>
+              </div>
+
+            </aside>
+          </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-2">
+                <div class="box_product ">
+           <div class="product_img_box w-100 ">
+              <img src="../../../../assets/imgs/product.png">
+              <button  >
+               <app-heart></app-heart>
+            </button>
+
+           </div>
+           <aside>
+             <div class="d-flex justify-content-between align-items-center p-2">
+                 <div class="font-bold">سرير تركي</div>
+                 <span class=" main-color"> 8000 <span> ر.س </span></span>
+             </div>
+             <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+               <div class="">
+                 <div class="mb-1 grey-color">فنادق</div>
+
+                 <app-rating></app-rating>
+               </div>
+               <div  class="semi_btn_w">50% off </div>
+              </div>
+             <div class="d-flex align-items-center justify-content-center my-2">
+               <app-plus-minus-btn></app-plus-minus-btn>
+             </div>
+
+           </aside>
+         </div>
+               
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 mb-2">
+            <div class="box_product ">
+       <div class="product_img_box w-100 ">
+          <img src="../../../../assets/imgs/product.png">
+          <button  >
+           <app-heart></app-heart>
+        </button>
+
+       </div>
+       <aside>
+         <div class="d-flex justify-content-between align-items-center p-2">
+             <div class="font-bold">سرير تركي</div>
+             <span class=" main-color"> 8000 <span> ر.س </span></span>
+         </div>
+         <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+           <div class="">
+             <div class="mb-1 grey-color">فنادق</div>
+
+             <app-rating></app-rating>
+           </div>
+           <div  class="semi_btn_w">50% off </div>
+          </div>
+         <div class="d-flex align-items-center justify-content-center my-2">
+           <app-plus-minus-btn></app-plus-minus-btn>
+         </div>
+
+       </aside>
+     </div>
+           
+       </div>
+       <div class="col-lg-3 col-md-6 col-12 mb-2">
+        <div class="box_product ">
+   <div class="product_img_box w-100 ">
+      <img src="../../../../assets/imgs/product.png">
+      <button  >
+       <app-heart></app-heart>
+    </button>
+
+   </div>
+   <aside>
+     <div class="d-flex justify-content-between align-items-center p-2">
+         <div class="font-bold">سرير تركي</div>
+         <span class=" main-color"> 8000 <span> ر.س </span></span>
+     </div>
+     <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+       <div class="">
+         <div class="mb-1 grey-color">فنادق</div>
+
+         <app-rating></app-rating>
+       </div>
+       <div  class="semi_btn_w">50% off </div>
+      </div>
+     <div class="d-flex align-items-center justify-content-center my-2">
+       <app-plus-minus-btn></app-plus-minus-btn>
+     </div>
+
+   </aside>
+ </div>
+       
+   </div>
+        </div>
+        <a [routerLink]="['']" class="btn_main">شراء</a>
+        <div class="row mt-4 mb-2 ">
+          <div class="col-12">
+            <div class="the_title ">
+              <h2 class=" my_sections position-relative">بيانات الأستلام</h2>
+           </div>
+            <div class="grey-color "> الرجاء مليءالبيانات التالية لأتمام عملية الشراء</div>
+          </div>
+          <div class="col-12 my-3">
+            <ejs-tab id="element" >
+              <e-tabitems>
+                      <e-tabitem>
+                          <ng-template #headerText>
+                             <div class="d-flex align-items-center gap_10">
+                              <input type="radio" name="tab" checked>
+                              <div>استلام بواسطة جهز</div>
+                              </div>
+                          </ng-template>
+                          <ng-template #content>
+                            <div class="row justify-content-center">
+                              <div class="col-md-5 col-12 ">
+                                <div class="form-group">
+                                  <label for="">اسم المستلم</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="col-md-5 col-12 ">
+                                <div class="form-group">
+                                  <label for=""> رقم الجوال</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-md-5 col-12 ">
+                                <div class="form-group">
+                                  <label for="">اسم المستلم</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="col-md-5 col-12 ">
+                                <div class="form-group">
+                                  <label for=""> رقم الجوال</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-md-10 col-10 ">
+                                <div class="form-group">
+                                  <label for=""> العنوان</label>
+                                  <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="الرجاء تحديد العنوان علي الخريطة">
+                                     <span class="fa fa-bell fa-icon"></span>
+                                  </div>
+                                </div>
+                              </div>
+                             
+                            </div>
+                          </ng-template>
+                      </e-tabitem>
+                      <e-tabitem>
+                          <ng-template #headerText>
+                            <div class="d-flex align-items-center gap_10">
+                              <input type="radio" name="tab" >
+                              <div class="text">استلام بواسطة شركة الشحن</div>
+                              </div>
+                          </ng-template>
+                          <ng-template #content>
+                              Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+                              4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum,
+                              Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s membership to Harvard students,
+                              but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support
+                              for students at various other universities and later to high-school students.
+                          </ng-template>
+                      </e-tabitem>
+                    
+                  </e-tabitems>
+              </ejs-tab>
+          </div>
+        
+         
+        </div>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

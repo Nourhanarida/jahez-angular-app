@@ -1,0 +1,8 @@
+::ng-deep label.star {
+    padding: 3px !important;
+    font-size: 16px !important;
+    color:var(--grey-color) !important;
+}
+::ng-deep input.star-1:checked ~ label.star::before {
+    color: var(--main-color) !important;
+}

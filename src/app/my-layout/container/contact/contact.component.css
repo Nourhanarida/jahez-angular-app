@@ -1,0 +1,44 @@
+.main-content{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e4eeff;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+.sec-contact{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 3px -1px 4px 5px #f3ecec;
+}
+.content img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    object-fit: contain;
+}
+.form-control{
+    padding: 20px 15px;
+    border-radius: 14px;
+}
+.form-group label{
+    font-size: 17px;
+    color: var(--grey-color);
+}
+.form-group textarea{
+    height: 160px;
+}
+.btn_main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 200px;
+}

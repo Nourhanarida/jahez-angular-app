@@ -1,0 +1,78 @@
+.prod-details-carousel {
+    width: 80%;
+}
+.prod-details-carousel .index-item {
+    width:80%;
+     margin: auto;
+}
+.prod-details-carousel .index-item .card{
+    height: 290px;
+    margin: auto;
+    position: relative;
+    border: none;
+    overflow: hidden;
+}
+.prod-details-carousel .index-item .card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+::ng-deep .heart{
+    right: 8px !important;
+}
+.semi_btn_w{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    top: 20px;
+    left: 0;
+}
+.aside-body{
+    width: 80%;
+    margin: auto;
+}
+::ng-deep .owl-theme .owl-nav{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+}
+::ng-deep .owl-nav .owl-prev , 
+::ng-deep .owl-nav .owl-next {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color) !important;
+    margin: 0 25px !important;
+}
+.btn_main{
+    width: 320px;
+    margin: 20px auto;
+}
+.mini_btn_main{
+    margin: 30px auto;
+}
+::ng-deep .modal-content{
+    height: auto !important;
+    padding: 10px;
+}
+._img{
+    width: 55px;
+    height: 55px;
+    display: block;
+    margin: 10px auto;
+}
+::ng-deep .modal{
+    --bs-modal-width: 50% !important;
+    text-align: center;
+}
+::ng-deep .modal .mini_btn_main{
+    margin: 15px auto;
+}

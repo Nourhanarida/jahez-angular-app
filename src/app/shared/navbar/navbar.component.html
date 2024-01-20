@@ -1,0 +1,94 @@
+<div class=" position-absolute w-100">
+    <div class="container">
+        <div class="main-nav">
+          <a routerLink=""> <app-logo></app-logo></a>
+           
+
+            <ul class="nav_bar">
+              <li><a [routerLink]="['']" [routerLinkActive]="['active']">الرئيسية</a></li>
+              <li><a [routerLink]="['/bestselling']" >الأكثر مبيعا</a></li>
+              <li><a [routerLink]="['/new']">جديدنا</a></li>
+              <li><a [routerLink]="['/offers']">العروض</a></li>
+              <li><a [routerLink]="['/favourite']">المفضلة</a></li>
+              <li>
+                <a  ngbDropdown class="position-relative ">
+                  <button class="" id="navdropdown"
+                          ngbDropdownToggle><span>طلباتي</span><i class="fa fa-angle-down mx-1"></i></button>
+                  <div ngbDropdownMenu="navdropdown">
+                    <a [routerLink]="['/aboutaccept']" ngbDropdownItem class="d-flex justify-content-between align-items-center"> <span> قيد الموافقة</span><i class="fa fa-angle-left"></i></a>
+                    <a [routerLink]="['/aboutpaid']" ngbDropdownItem class="d-flex justify-content-between align-items-center"> <span> قيد الدفع</span><i class="fa fa-angle-left"></i></a>
+                    <a [routerLink]="['/myrecentorder']" ngbDropdownItem class="d-flex justify-content-between align-items-center"> <span>  طلبات حالية</span><i class="fa fa-angle-left"></i></a>
+                    <a [routerLink]="['/endedorders']" ngbDropdownItem class="d-flex justify-content-between align-items-center"> <span>  طلبات منتهية</span><i class="fa fa-angle-left"></i></a>
+                  </div>
+                </a>
+              </li>
+              <li><a [routerLink]="['/contact']">تواصل معنا</a></li>
+
+             </ul>
+          
+              <div class="top_links ">
+                <ul *ngIf="submitted" class="login-links d-flex align-items-center gap_10  ">
+                  <li> 
+                    <div ngbDropdown class="login_dropdown mt-2">
+                      <button class="" id="logindropdown" ngbDropdownToggle>
+                        <div class=" d-flex align-items-center">
+                          <img src="../../../assets/imgs/prof-img.jpg">
+  
+                          <aside class="white-color ">
+                            محمد أشرف
+                            <i class="fa fa-angle-down"></i>
+                          </aside>
+                        </div>
+  
+                      </button>
+                      <div ngbDropdownMenu="logindropdown">
+                        <a [routerLink]="['/account']" ngbDropdownItem class=" d-flex align-items-center" ><i class="fa fa-user"></i><span class="me-2">حسابي</span></a>
+                        <a [routerLink]="['/']" ngbDropdownItem class=" d-flex align-items-center"><i class="fa fa-user"></i><span class="me-2">تسجيل خروج</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a  [routerLink]="['/notif']" class="notif_links " data-num="10"  placement="bottom" ngbTooltip="الأشعارات"  tooltipclass="my-custom-class" >
+                      <i class="fa fa-bell"></i>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a [routerLink]="['/shops']" class="notif_links " data-num = "10"  placement="bottom" ngbTooltip="السلة" >
+                      <i class="fa fa-cart-plus"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="d-flex align-items-center gap_10">
+                  <li *ngIf="!submitted">
+                    <button type="button" class="btn_main login-btn"  (click)="open(chooseRegister)"  placement="bottom" ngbTooltip="تسجيل الدخول/جديد" >تسجيل</button>
+                 </li>
+                 <li>
+                   <button class="nav_search" type="button"   data-toggle="modal" data-target="#searchModal" >
+                     <i class="fa fa-search"></i>
+                 </button>
+                 </li>
+                 <li>
+                  <button class="toggle-menu" type="button" (click)="toggleMenu()">
+                    <i class="fa fa-bars "></i>
+                  </button>
+                 </li>
+                </ul>
+               
+              </div>
+        </div>
+    </div>
+</div>
+        <div class="choose-register log-modal">
+          <ng-template #chooseRegister let-modal >
+            <div class="modal-body ">
+              <app-choose-register></app-choose-register>
+            </div>
+    </ng-template>
+
+        </div>
+
+
+
+
+

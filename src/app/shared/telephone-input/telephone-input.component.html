@@ -1,0 +1,31 @@
+<div class="phone-country">
+  <div class="d-flex justify-content-between align-items-center">
+    <label for=""> رقم الجوال</label>
+    <a routerLink="" class="font-11" >تغيير رقم الجوال</a>
+  </div>
+   
+    <div class="position-relative">
+      <ngx-intl-tel-input
+        [cssClass]="'custom'"
+        [preferredCountries]="preferredCountries"
+        [enableAutoCountrySelect]="true"
+        [enablePlaceholder]="false"
+        [searchCountryFlag]="true"
+        [searchCountryField]="[
+          SearchCountryField.Iso2,
+          SearchCountryField.Name
+        ]"
+        [selectFirstCountry]="false"
+        [selectedCountryISO]="CountryISO.Egypt"
+        [phoneValidation]="true"
+        [separateDialCode]="separateDialCode"
+        [numberFormat]="PhoneNumberFormat.National"
+        name="phone"
+        formControlName="phone" 
+        required
+      >
+      </ngx-intl-tel-input>
+      <span class="text-input">456 123 050</span>
+      <i class="fa fa-mobile start-icon"></i>
+      </div>
+    </div>

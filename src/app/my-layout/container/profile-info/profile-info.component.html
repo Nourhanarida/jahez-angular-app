@@ -1,0 +1,141 @@
+
+<div class="body-content">
+  <form>
+    <!-- <div class="form-group">
+        <label for="">   اسم المستخدم</label>
+        <div class=" position-relative">
+          <input type="text" class="form-control " formControlName="">
+          <span class="text-input">{{userName || "محمد أشرف"}}</span>
+          <span class="fa fa-user start-icon"></span>
+          <i class="fa fa-user fa-icon"></i>
+        </div>
+      </div> -->
+
+      <!-- <div class="form-group">
+        <div class="position-relative">
+          <app-telephone-input></app-telephone-input>
+        </div>
+      </div>  -->
+
+     <!-- <div class="form-group">
+      <label for=""> البريد الألكتروني</label>
+      <div class="position-relative">
+        <span class="fa fa-envelope start-icon"></span>
+        <input type="email" formControlName="" class="form-control" >
+        <span class="text-input">{{ email || "mohamedashraf@gmail.com"}}</span>
+        <i class="fa fa-edit fa-icon"></i>
+        
+      </div>
+    </div>  -->
+
+    <!-- <div class="form-group">
+      <label for="">  الدولة</label>
+      <div class="position-relative">
+        <span class="fa fa-home start-icon"></span>
+        
+        <select
+        class="custom-select form-control "
+        (change)="changeCity($event)"
+        formControlName="cityName">
+        <option *ngFor="let city of City" [ngValue]="city">
+           {{ city || "المملكة العربية السعودية"}}
+        </option>
+      </select>
+      <i class="fa fa-angle-down fa-icon"></i>
+      </div>
+    </div> -->
+
+    <!-- <div class="form-group">
+      <label for="">  المدينة</label>
+      <div class="position-relative">
+        <span class="fa fa-home start-icon"></span>
+        
+        <select
+        class="custom-select form-control "
+        (change)="changeCity($event)"
+        formControlName="cityName">
+        <option *ngFor="let city of City" [ngValue]="city">
+           {{ city || "المملكة العربية السعودية"}}
+        </option>
+      </select>
+      <i class="fa fa-angle-down fa-icon"></i>
+      </div>
+    </div> -->
+
+    <!-- <div class="form-group">
+      <label for="">  المنطقة</label>
+      <div class="position-relative">
+        <span class="fa fa-home start-icon"></span>
+        
+        <select
+        class="custom-select form-control "
+        (change)="changeCity($event)"
+        formControlName="cityName">
+        <option *ngFor="let city of City" [ngValue]="city">
+           {{ city || " الرياض "}}
+        </option>
+      </select>
+      <i class="fa fa-angle-down fa-icon"></i>
+      </div>
+
+    <div class="invalid-feedback" *ngIf="isSubmitted && cityName?.invalid">
+      <sup>*</sup>Please provide city name
+    </div>
+    </div> -->
+
+    <!-- <div class="form-group">
+      <label for="">العنوان </label>
+      <div class="position-relative">
+        <i class="fa fa-home start-icon"></i>
+        <span class="text-input">{{title || "شارع الصندوق الأسود الرياض"}}</span>
+        <input type="text" formControlName="" class="form-control"> -->
+        <!-- <button type="button" (click)="open(googlemaps)" class="fa fa-map fa-icon" ></button> -->
+      <!-- </div>
+    </div> -->
+
+    <!-- <div class="form-group">
+      <label for="">  رقم السجل التجاري</label>
+      <div class="position-relative">
+        <span class="fa fa-sticky-note start-icon"></span>
+        <input type="text" formControlName="" class="form-control">
+        <span class="text-input">{{" 789 456 123 "}}</span>
+        <i class="fa fa-edit fa-icon"></i>
+      </div>
+    </div> -->
+    
+<button type="submit" class="btn_main"> حفظ التغييرات</button>
+<div class="d-flex justify-content-center align-items-center font-14">
+<a routerLink="" class="grey-color  px-3">تغيير كلمه المرور</a>
+<a (click)="open(deleteAccount)" class="delete-account  px-3">حذف الحساب</a>
+</div>
+ </form> 
+
+</div>
+
+    <!-- <ng-template> -->
+      <!-- <google-map  #googlemaps height="300px"
+      width="600px"
+      [center]="center"
+      [zoom]="zoom"
+      (mapClick)="moveMap($event)"
+      (mapMousemove)="move($event)">
+    </google-map> -->
+    
+    <!-- <div>خط العرض :{{display?.lat}}</div>
+    <div>خط الطول :{{display?.lng}}</div> -->
+    
+    <!-- </ng-template> -->
+
+    <!-- <ng-template #deleteAccount let-modal >
+      <div class="modal-body">
+        <div class="d-flex flex-column justify-content-cener align-items-center">
+          <i class="fa fa-exclamation"></i>
+          <p class="main-color">؟ هل أنت متأكد من حذف الحساب </p>
+          <div class="d-flex align-items-center">
+             <a routerLink="" class="btn_main bg-red-color" click="deleteAccount()">حذف الحساب</a>
+             <a routerLink="/account" class="btn_main " > تراجع</a>
+          </div>
+          
+        </div>
+      </div>
+    </ng-template> -->

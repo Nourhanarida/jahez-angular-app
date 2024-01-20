@@ -1,0 +1,14 @@
+
+.sub_title{
+  margin:0 auto 20px;
+
+}
+.sub_title::after{
+  right: 50%;
+  transform: translateX(50%);
+  width: 60% !important;
+}
+.btn_main{
+  width: 100%;
+  margin: 15px auto;
+}

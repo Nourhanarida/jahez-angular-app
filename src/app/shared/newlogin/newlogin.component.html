@@ -1,0 +1,138 @@
+<div class="row justify-content-center">
+  <div class="col-6">
+    <div class="bg-logo m-auto">
+      <app-logo></app-logo>
+    </div>
+    <div class="sub_title ">
+      <h3 class="font-bold">مرحبا بك</h3>
+    </div>
+    <div class="text-two text-center">
+      <div class=" mb-1"> حساب جديد</div>
+      <p class="grey-color font-11">برجاء ادخال البيانات التالية حتي تتمكن من انشاء حساب جديد</p>
+    </div>
+  </div>
+
+
+<div class="row justify-content-between align-items-center  ">
+
+  <div class="col-lg-6 col-12 px-2">
+    <form >
+      <div class="form-group">
+        <label for="">اسم الشركة</label>
+        <input type="text" formControlName="nCompany" class="form-control" placeholder="الرجاء ادخال اسم الشركة" required/>
+      </div>
+      <div class="form-group">
+        <label for=""> البريد الألكتروني</label>
+        <input type="email" formControlName="" class="form-control" placeholder="الرجاء ادخال البريد الألكتروني " required/>
+      </div>
+      <div class="form-group">
+        <label for="">  المدينة</label>
+        <div class="position-relative">
+          <select
+          class="custom-select form-control"
+          (change)="changeCity($event)"
+          formControlName="cityName" required
+        >
+          <option value="">الرجاء أختيار المدينة </option>
+          <option *ngFor="let city of City" [ngValue]="city">
+            {{ city }}
+          </option>
+        </select>
+        <i class="fa fa-angle-down fa-icon"></i>
+        </div>
+
+      <div class="invalid-feedback" *ngIf="isSubmitted && cityName?.invalid">
+        <sup>*</sup>Please provide city name
+      </div>
+      </div>
+
+      <div class="form-group">
+        <label for="">العنوان </label>
+        <div class="position-relative">
+          <input type="text" formControlName="" class="form-control" placeholder="   يرجي تحديد العنوان علي الخريطة" required/>
+          <button type="button" (click)="open(googlemaps)" class="fa fa-map fa-icon" ></button>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="">  كلمة المرور</label>
+        <div class="show-pass position-relative">
+          <input type="password" class="form-control " formControlName="password" placeholder="الرجاء ادخال كلمة المرور  " required>
+          <span class="fa fa-eye fa-icon"></span>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <div class="col-lg-6 col-12 px-2">
+    <form >
+      <div class="form-group">
+        <label for="">رقم الجوال</label>
+        <input type="text" formControlName="nCompany" class="form-control" placeholder="الرجاء ادخال اسم الشركة" required/>
+      </div>
+      <div class="form-group">
+        <label for="">الدولة</label>
+        <input type="email" formControlName="" class="form-control" placeholder="الرجاء ادخال البريد الألكتروني " required/>
+      </div>
+      <div class="form-group">
+        <label for="">  المنطقة</label>
+        <div class="position-relative">
+          <select
+          class="custom-select form-control"
+          (change)="changeCity($event)"
+          formControlName="cityName" required
+        >
+          <option value="">الرجاء أختيار المدينة </option>
+          <option *ngFor="let city of City" [ngValue]="city">
+            {{ city }}
+          </option>
+        </select>
+        <i class="fa fa-angle-down fa-icon"></i>
+        </div>
+
+      <div class="invalid-feedback" *ngIf="isSubmitted && cityName?.invalid">
+        <sup>*</sup>Please provide city name
+      </div>
+      </div>
+
+      <div class="form-group">
+        <label for="">رقم السجل التجاري </label>
+        <div class="position-relative">
+          <input type="text" formControlName="" class="form-control" placeholder="   يرجي تحديد العنوان علي الخريطة" required/>
+          <button type="button" (click)="open(googlemaps)" class="fa fa-map fa-icon" ></button>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="">  كلمة المرور</label>
+        <div class="show-pass position-relative">
+          <input type="password" class="form-control " formControlName="password" placeholder="الرجاء ادخال كلمة المرور  " required>
+          <span class="fa fa-eye fa-icon"></span>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <button type="submit" class="btn_main">تسجيل الحساب</button>
+
+</div>
+
+</div>
+
+
+
+<ng-template #googlemaps>
+  <google-map height="300px"
+  width="600px"
+  [center]="center"
+  [zoom]="zoom"
+  (mapClick)="moveMap($event)"
+  (mapMousemove)="move($event)">
+</google-map>
+
+<div>خط العرض :{{display?.lat}}</div>
+<div>خط الطول :{{display?.lng}}</div>
+
+</ng-template>

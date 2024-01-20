@@ -1,0 +1,21 @@
+<app-header></app-header>
+  <div class="body-content">
+    <div class="sec-marg">
+      <div class="container">
+       <app-filter-btn></app-filter-btn>
+        </div>
+    </div>
+    <div class="sec-marg">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-3 col-md-6 col-12 mb-3" *ngFor="let product of products">
+            <app-box-product></app-box-product>
+          </div>
+        </div>
+
+      </div>
+    </div>
+       
+  </div>
+  
+  <app-footer></app-footer>

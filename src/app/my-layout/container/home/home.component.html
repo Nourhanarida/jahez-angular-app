@@ -1,0 +1,422 @@
+<header>
+  <div class=" position-relative">
+   <div class="my-nav position-absolute">
+    <app-navbar></app-navbar>
+   </div>
+    <owl-carousel-o [options]="customOptions" class="index-carousel position-relative">
+
+      <ng-template carouselSlide>
+
+        <div class="index-item layer_A">
+          <img src="../../../../assets/imgs/adrian-sulyok-scfzNLg6rrhQ-unsplash (1).png">
+        <div class="text">
+          <h2 class="font-30"> جميع طلباتك تجدها هنا</h2>
+          <p>جهز في خدمتك دائما</p>
+          <a routerLink="/login" class="btn_main">انضم وتسوق الأن</a>
+       </div>
+      </div>
+       </ng-template>
+      <ng-template carouselSlide>
+        <div class="index-item layer_A">
+          <img src="../../../../assets/imgs/adrian-sulyok-scfzNLg6rrhQ-unsplash (1).png">
+        <div class="text">
+          <h2 class="font-30"> جميع طلباتك تجدها هنا</h2>
+          <p>جهز في خدمتك دائما</p>
+          <a routerLink="/login" class="btn_main">انضم وتسوق الأن</a>
+       </div>
+      </div>
+
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="index-item layer_A">
+            <img src="../../../../assets/imgs/adrian-sulyok-scfzNLg6rrhQ-unsplash (1).png">
+          <div class="text">
+            <h2 class="font-30"> جميع طلباتك تجدها هنا</h2>
+            <p>جهز في خدمتك دائما</p>
+            <a routerLink="/login" class="btn_main">انضم وتسوق الأن</a>
+         </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+
+
+    <div class="sections">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-7">
+            <div class="sec mb-2">
+              <img src="../../../../assets/imgs/Group 97570.png" class="_img mb-3">
+              <h3>توصيل لأي مكان</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-7">
+            <div class="sec mb-2">
+               <img src="../../../../assets/imgs/Group 97575.png"  class="_img mb-3">
+              <h3>  عروض وخصومات تصل الي 50%</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2 col-7">
+            <div class="sec">
+              <img src="../../../../assets/imgs/Group 97580.png" loading="lazy" class="_img mb-3">
+              <h3>  دفع أمن لجميع طلباتك</h3>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+</header>
+
+
+
+<div class="body-content">
+  <div class="sec-marg">
+    <div class="container">
+      <div class="branches">
+        <div class="the_title ">
+           <h2 class="font-weight-bold  mb-2 my_sections position-relative">الأقسام</h2>
+        </div>
+        <div class="d-flex align-items-center mt-4">
+          <div class="hotels text-center ">
+              <div class="img_box bg-main-color mb-2">
+                <img src="../../../../assets/imgs/Group 97388.png" loading="lazy" alt="">
+              </div>
+              <h4>فنادق</h4>
+          </div>
+          <div class="path_img ">
+            <img src="../../../../assets/imgs/Path 49768.png">
+          </div>
+           <div class="hotels text-center ">
+            <div class="img_box bg-main-color mb-2">
+              <img src="../../../../assets/imgs/Group 97383.png" loading="lazy" alt="">
+            </div>
+            <h4>مطاعم</h4>
+           </div>
+           <div class="path_img ">
+            <img src="../../../../assets/imgs/Path 49768.png">
+          </div>
+          <div class="hotels text-center ">
+              <div class="img_box bg-main-color mb-2">
+                <img src="../../../../assets/imgs/Group 97388.png" loading="lazy" alt="">
+              </div>
+              <h4>مقاهي</h4>
+          </div>
+          <div class="path_img ">
+            <img src="../../../../assets/imgs/Path 49768.png">
+          </div>
+          <div class="hotels text-center ">
+            <div class="img_box bg-main-color mb-2">
+              <img src="../../../../assets/imgs/Group 97383.png" loading="lazy" alt="">
+            </div>
+            <h4>مخابز</h4>
+        </div>
+          <div class="path_img ">
+            <img src="../../../../assets/imgs/Path 49768.png">
+          </div>
+        <div class="hotels text-center ">
+          <div class="img_box bg-main-color mb-2">
+            <img src="../../../../assets/imgs/Group 97385.png" loading="lazy" alt="">
+          </div>
+          <h4>سوبر ماركت</h4>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-marg">
+    <div class="container">
+      <div class="head d-flex justify-content-between align-items-center">
+        <div class="sub_title">
+          <div>الأكثر مبيعا</div>
+        </div>
+        <a routerLink="/moreitems" class="mini_btn_main">المزيد</a>
+      </div>
+      <div class="row bestselling d-flex justify-content-between align-items-center mt-3">
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <!-- <div class="box_product box-shadow">
+            <div class="product_img_box w-100 ">
+               <img src="../../../../assets/imgs/product.png">
+               <button  >
+                 <span class="fa fa-heart heart" (click)="enableDisableRule()" [ngClass]="{'red-color' : toggle, 'grey-color': !toggle}"></span> 
+             </button>
+        
+            </div>
+            <aside>
+              <div class="d-flex justify-content-between align-items-center p-2">
+                  <div class="font-bold">سرير تركي</div>
+                  <span class=" main-color"> 8000 <span> ر.س </span></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+                <div class="">
+                  <div class="mb-1 grey-color">فنادق</div>
+                  <app-rating></app-rating>
+                </div>
+                <div  class=" btn_main_w">50% <span>off</span></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center my-3">
+                <a routerLInk="/account" class="btn_main btn_main_w product_details_btn ">تفاصيل المنتج</a>
+        
+        
+              </div>
+        
+            </aside>
+          </div>
+         -->
+             <app-box-product></app-box-product>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <!-- <div class="box_product box-shadow">
+            <div class="product_img_box w-100 ">
+               <img src="../../../../assets/imgs/product.png">
+               <button  >
+                <span class="fa fa-heart heart" (click)="enableDisableRule()" [ngClass]="{'red-color' : toggle, 'grey-color': !toggle}"></span>
+             </button>
+
+            </div>
+            <aside>
+              <div class="d-flex justify-content-between align-items-center p-2">
+                  <div class="font-bold">سرير تركي</div>
+                  <span class=" main-color"> 8000 <span> ر.س </span></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+                <div class="">
+                  <div class="mb-1 grey-color">فنادق</div>
+                  <app-rating></app-rating>
+                </div>
+                <div  class=" btn_main_w">50% <span>off</span></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center my-3">
+                <a routerLInk="" class="btn_main btn_main_w product_details_btn ">تفاصيل المنتج</a>
+
+
+              </div>
+
+            </aside>
+          </div> -->
+          <app-box-product></app-box-product>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1 ">
+          <!-- <div class="box_product box-shadow">
+            <div class="product_img_box w-100 ">
+               <img src="../../../../assets/imgs/product.png">
+               <button  >
+                <span class="fa fa-heart heart" (click)="enableDisableRule()" [ngClass]="{'red-color' : toggle, 'grey-color': !toggle}"></span>
+             </button>
+
+            </div>
+            <aside>
+              <div class="d-flex justify-content-between align-items-center p-2">
+                  <div class="font-bold">سرير تركي</div>
+                  <span class=" main-color"> 8000 <span> ر.س </span></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+                <div class="">
+                  <div class="mb-1 grey-color">فنادق</div>
+
+                  <form [formGroup]="form" >
+                    <ngx-star-rating formControlName="rating" [id]="'rating'"></ngx-star-rating>
+                </form>
+
+
+                </div>
+                <div  class=" btn_main_w">50% <span>off</span></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center my-3">
+                <a routerLInk="" class="btn_main btn_main_w product_details_btn ">تفاصيل المنتج</a>
+
+
+              </div>
+
+            </aside>
+          </div> -->
+           <app-box-product></app-box-product>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <!-- <div class="box_product box-shadow">
+            <div class="product_img_box w-100 ">
+               <img src="../../../../assets/imgs/product.png">
+               <button  >
+                <span class="fa fa-heart heart" (click)="enableDisableRule()" [ngClass]="{'red-color' : toggle, 'grey-color': !toggle}"></span>
+             </button>
+
+            </div>
+            <aside>
+              <div class="d-flex justify-content-between align-items-center p-2">
+                  <div class="font-bold">سرير تركي</div>
+                  <span class=" main-color"> 8000 <span> ر.س </span></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pe-2 mb-1">
+                <div class="">
+                  <div class="mb-1 grey-color">فنادق</div>
+
+                  <form [formGroup]="form" >
+                    <ngx-star-rating formControlName="rating" [id]="'rating'"></ngx-star-rating>
+                </form>
+
+
+                </div>
+                <div  class=" btn_main_w">50% <span>off</span></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center my-3">
+                <a routerLInk="" class="btn_main btn_main_w product_details_btn ">تفاصيل المنتج</a>
+
+
+              </div>
+
+            </aside>
+          </div> -->
+         <app-box-product></app-box-product>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-marg">
+    <div class="container">
+      <div class="head d-flex justify-content-between align-items-center">
+        <div class="position-relative">
+            <h3 class="underline-after font-bold py-2"> جديدنا</h3>
+        </div>
+        <a routerLink="/moreitems" class="mini_btn_main">المزيد</a>
+      </div>
+      <div class="row bestselling d-flex justify-content-between align-items-center mt-3">
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+         <app-box-product></app-box-product>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-marg">
+    <div class="container">
+      <div class="head d-flex justify-content-between align-items-center">
+        <div class="position-relative">
+            <h3 class="underline-after font-bold py-2"> العروض</h3>
+        </div>
+        <a routerLink="/moreitems" class="mini_btn_main">المزيد</a>
+      </div>
+      <div class="row bestselling d-flex justify-content-between align-items-center mt-3">
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-12 mb-1">
+          <app-box-product></app-box-product>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-marg">
+    <div class="container">
+      <div class="head ">
+        <div class="sub_title">
+            <h3 class="font-bold" > أراء عملائنا</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+            <div class="">
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sec-marg ">
+    <div class="container">
+        <!-- <div >
+
+        </div>
+        <div class="">
+        </div>
+        <div class="paner-circle">
+
+        </div> -->
+        <div class="row justify-content-center ">
+          <div class="col-lg-10">
+            <div class="row paner flex-wrap-reverse bg-main-color ">
+              <div class="col-md-6">
+
+                <div class=" text">
+                  <h3 class="font-bold">انضم الينا كمندوب</h3>
+                  <p class="my-4 ">هذا النص  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                  <a routerLink="" class="btn_main "> اظهار المزيد <span class="fa fa-arrow-left"></span></a>
+                </div>
+               
+              </div>
+              <div class="col-md-6">
+                <div class="paner_img">
+                  <img src="../../../../assets/imgs/Group 41036.png">
+
+
+                </div>
+              </div>
+            </div>         
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+

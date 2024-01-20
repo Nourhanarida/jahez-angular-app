@@ -1,0 +1,36 @@
+
+::ng-deep .text-input{
+    position: absolute;
+    font-size: 14px;
+    margin-inline-start: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+:host  ::ng-deep .iti__selected-flag{
+    background-color:transparent !important;
+  }
+:host ::ng-deep .iti--allow-dropdown .iti__flag-container{
+    left: 0 !important;
+    right: auto !important;
+  }
+  .custom-select{
+    padding-inline-start: 37px;
+  }
+  form .btn_main{
+    margin: 30px auto 15px;
+    width: 320px;
+  }
+  .delete-account{
+    color: red;
+    position: relative;
+  
+  }
+  .delete-account::after{
+    content: "";
+    position: absolute;
+    height: 22px;
+    right: 0;
+    background-color: var(--grey-color);
+    width: 3px;
+  }

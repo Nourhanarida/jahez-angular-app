@@ -1,0 +1,154 @@
+
+    <app-header></app-header>
+
+<div class="body-content">
+    <div class="">
+        <div class="container">
+            <div class="sub_title my-3">
+                <h3 class=""> تفاصيل المنتج</h3>
+            </div>
+            <owl-carousel-o [options]="customOptions" class="prod-details-carousel position-relative ">
+
+                <ng-template carouselSlide>
+                    <div class="index-item ">
+                        <div class="card ">
+                            <img src="../../../../assets/imgs/product.png">
+                            <div class="prod-heart">
+                                <app-heart></app-heart>
+                            </div>
+                            <div class="semi_btn_w position-absolute">
+                                50% off
+                            </div>
+                        </div>
+                  
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="index-item ">
+                        <div class="card ">
+                            <img src="../../../../assets/imgs/product.png">
+                            <div class="prod-heart">
+                                <app-heart></app-heart>
+                            </div>
+                            <div class="semi_btn_w position-absolute">
+                                50% off
+                            </div>
+                        </div>
+                    
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="index-item ">
+                        <div class="card ">
+                            <img src="../../../../assets/imgs/product.png">
+                            <div class="prod-heart">
+                                <app-heart></app-heart>
+                            </div>
+                            <div class="semi_btn_w position-absolute">
+                                50% off
+                            </div>
+                        </div>
+               
+                    </div>
+                </ng-template>
+
+              </owl-carousel-o>
+               <aside class="aside-body mt-2">
+              
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div>سرير تركي</div>
+                                <div><app-plus-minus-btn></app-plus-minus-btn></div>
+
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                              <div>
+                                <div class="main-color ">8000 ر.س</div>
+                                <div><span class="grey-color font-11">تاريخ الأضافة  : </span><span class="main-color">22/2/2023</span></div>
+                              </div>
+                                <div><app-rating></app-rating></div>
+                            </div>
+                            <div>
+                                <p class=" mb-3 font-11 black-color">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق .
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                                    .
+                                </p>
+                                <p class=" mb-3 font-11 black-color">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق .
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                                    .
+                                </p>
+                                <p class=" mb-3 font-11 black-color">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق .
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                                    .
+                                </p>
+
+
+                            </div>
+
+                        </aside>
+
+          <a  class="btn_main" (click)="open(shoptemplate)">أضافة الي السلة</a>
+        </div>
+
+    </div>
+    <div class="sec-padd">
+        <div class="container">
+            <div class="sub_title">
+                <div>منتجات مشابهة </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-6 col-12 mb-1">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-1">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-1">
+                    <app-box-product></app-box-product>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-1">
+                    <app-box-product></app-box-product>
+                </div>
+              
+            </div>
+            <a [routerLink]="['moreitems']" class="mini_btn_main">المذيد</a>
+          
+        </div>
+    </div>
+   
+</div>
+<div>
+    <app-footer></app-footer>
+</div>
+
+
+
+<div class="">
+    <ng-template #shoptemplate let-modal [ngclass]="'shops-modal'" >
+      <div class="modal-body d-flex justify-content-center align-items-center">
+        <div>
+            <img src="../../../assets/imgs/check.png" alt="check" lazy="loading" class="_img">
+            <p> تم أضافة المنتج الي السلة بنجاح</p>
+            <div class="d-flex align-items-center gap_5">
+                <a routerLink="/shops" class="mini_btn_main">السلة</a>
+                <a routerLink="/" class="mini_btn_main">الرئيسية</a>
+
+
+            </div>
+      </div>
+      </div>
+  </ng-template>
+  </div>

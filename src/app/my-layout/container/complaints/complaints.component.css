@@ -1,0 +1,26 @@
+.complaints-item{
+    border-radius: 6px;
+    padding: 15px 20px;
+    background-image: var(--white-color);
+    font-size: 14px;
+    margin: 20px 0;
+   
+}
+.tab-content{
+    border-top: 1px solid var(--grey-color);
+}
+.img-box{
+    background-color: var(--grey-color);
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    border-radius: 9px;
+}
+.img-box img{
+    width: 85px;
+    height: 85px;
+    display: block;
+    object-fit: cover;
+}

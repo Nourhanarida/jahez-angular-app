@@ -1,0 +1,9 @@
+.heart{
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: auto;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+}

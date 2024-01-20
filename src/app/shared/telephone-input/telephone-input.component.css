@@ -1,0 +1,28 @@
+::ng-deep .iti{
+    padding: 9px 7px;
+    border-radius: 3px;
+    background: var(--white-color) !important;
+    font-size: 12px;
+    border:1px solid  var(--grey-color);
+      color: var(--grey-color);
+    width: 100%;
+    margin-top: 1px;
+  }
+  ::ng-deep .iti__selected-flag{
+    background-color:#e5e5e5;
+  }
+  ::ng-deep .iti--allow-dropdown .iti__flag-container{
+    right: 0 !important;
+    left: auto !important;
+  }
+  ::ng-deep .iti--allow-dropdown input, .iti--allow-dropdown input[type=text],
+  .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input,
+   .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-right: 100px !important;
+   }
+  ::ng-deep .iti__selected-flag {
+    gap :4px !important;
+  }
+  ::ng-deep .iti__flag {
+    margin-inline-end: 8px !important;
+  }

@@ -1,0 +1,48 @@
+<div class="choose-register">
+<div class="row flex-wrap-reverse">
+  <div class="col-lg-6 col-12">
+    <div class="">
+       <div class="sub_title ">
+        <h3 class="font-bold">مرحبا بك</h3>
+       </div>
+      <div class="text-two">
+        <div class="font-16 font-bold mb-1">تسجيل الدخول</div>
+        <p class="grey-color font-11">برجاء ادخال بيانات حسابك حتي تتمكن من الدخول</p>
+      </div>
+
+      <form class="mt-3" [formGroup]="jobForm" (ngSubmit)="save()">
+        <div class="form-group">
+          <label for="">رقم الجوال/البريد الألكتروني</label>
+          <input type="tel" class="form-control" formControlName="firstName" placeholder="برجاء ادخال رقم الجوال او البريد الألكتروني" required>
+        </div>
+        <div class="form-group">
+          <label for="">كلمة المرور</label>
+          <div class="show-pass position-relative">
+            <input type="password" class="form-control " formControlName="password" placeholder="الرجاء ادخال كلمة المرور" required>
+            <span class="fa fa-eye fa-icon"></span>
+          </div>
+        </div>
+        <a routerLink="" class="d-flex justify-content-end grey-color "><small>  هل نسيت كلمة السر ؟</small> </a>
+        <a type="submit" routerLink="/" class="btn_main ">تسجيل الدخول</a>
+        <button class="d-flex justify-content-center m-auto main-color" (click)="open(newloginmodal)"><span class="grey-color ms-1">ليس لديك حساب؟ </span> اضغط هنا</button>
+      </form>
+
+    </div>
+  </div>
+  <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+
+    <a routerLink="/" class="bg-logo d-flex justify-content-center align-items-center bg-main-color">
+        <app-logo></app-logo>
+    </a>
+  </div>
+
+</div>
+<div class="new-login">
+  <ng-template #newloginmodal let-modal >
+    <div class="modal-body">
+     <app-newlogin></app-newlogin>
+    </div>
+  </ng-template>
+
+</div>
+

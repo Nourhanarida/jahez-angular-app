@@ -1,0 +1,43 @@
+
+<div class="row flex-wrap-reverse">
+    <div class="col-lg-6 col-12">
+      <div class="d-flex flex-column justify-content-center align-items-center ">
+        <div class="text text-center ">
+          <div class="sub_title mb-2">
+            <h3 class="font-bold">مرحبا بك</h3>
+          </div>
+          <small class="grey-color "  >برجاءاختيار نوع التسجيل</small>
+
+        </div>
+        <div>
+          <button type="button"  class="company"  (click)="open(companylogin)">
+            <img src="../../../assets/imgs/Path 49493.png" alt="companyimg" lazy="loading">
+            <div class="font-bold">حساب شركات </div>
+          </button>
+          <button type="button" class="company bg-main-color white-color">
+            <img src="../../../assets/imgs/Group 81801.png" alt="companyimg" lazy="loading">
+            <div class="font-bold">حساب مصنع </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-12">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="bg-logo d-flex justify-content-center align-items-center bg-main-color">
+          <app-logo></app-logo>
+        </div>
+
+      </div>
+    
+    </div>
+
+  </div>
+         
+  <div class="company-login">
+    <ng-template #companylogin let-modal >
+      <div class="modal-body ">
+       <app-login></app-login>
+      </div>
+  </ng-template>
+  </div> 
+  
